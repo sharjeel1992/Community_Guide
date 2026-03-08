@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Guardian</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Community Guardian</h1>
+    <p class="subtitle">Calm, local safety intelligence for neighborhoods, remote workers, and elders.</p>
+
+    <section class="card">
+      <h2>Create Alert</h2>
+      <form id="alertForm" novalidate>
+        <label>
+          Title
+          <input type="text" id="title" name="title" />
+          <small class="field-error" id="titleError"></small>
+        </label>
+
+        <label>
+          Description
+          <textarea id="description" name="description" rows="4"></textarea>
+          <small class="field-error" id="descriptionError"></small>
+        </label>
+
+        <label>
+          Location
+          <input type="text" id="location" name="location" />
+          <small class="field-error" id="locationError"></small>
+        </label>
+
+        <label>
+          Severity
+          <select id="severity" name="severity">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+          <small class="field-error" id="severityError"></small>
+        </label>
+
+        <button type="submit" id="createAlertButton">Create Alert</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <section class="card">
+        <h2>All Alerts</h2>
+      
+        <div class="filters">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by title, description, or location"
+          />
+      
+          <select id="filterSeverity">
+            <option value="">All Severities</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+
+          <select id="filterStatus">
+            <option value="">All Statuses</option>
+            <option value="new">New</option>
+            <option value="investigating">Investigating</option>
+            <option value="resolved">Resolved</option>
+          </select>
+        </div>
+      
+        <div id="alertsList"></div>
+    </section>
+  </div>
+
+  <div id="processingOverlay" class="processing-overlay" aria-live="polite" aria-hidden="true">
+    <div class="processing-box" role="status">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Request is processing. Please wait...</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

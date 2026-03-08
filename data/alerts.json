@@ -1,0 +1,170 @@
+[
+  {
+    "id": "1772993074986",
+    "title": "Suspicious password reset email",
+    "description": "Several residents reported urgent password reset emails with links.",
+    "location": "Bothell",
+    "severity": "high",
+    "status": "new",
+    "category": "",
+    "summary": "",
+    "checklist": [],
+    "createdAt": "2026-03-08T18:04:34.986Z"
+  },
+  {
+    "id": "1772995481394",
+    "title": "Suspicious password reset email",
+    "description": "Several residents received urgent email messages asking them to verify their account.",
+    "location": "Bothell",
+    "severity": "medium",
+    "status": "new",
+    "category": "",
+    "summary": "",
+    "checklist": [],
+    "createdAt": "2026-03-08T18:44:41.394Z"
+  },
+  {
+    "id": "1772995518686",
+    "title": "Wi-Fi outage in apartment block",
+    "description": "Multiple residents reported internet connectivity issues since this morning.",
+    "location": "Seattle, WA",
+    "severity": "high",
+    "status": "new",
+    "category": "",
+    "summary": "",
+    "checklist": [],
+    "createdAt": "2026-03-08T18:45:18.686Z"
+  },
+  {
+    "id": "1772996131193",
+    "title": "Suspicious password reset email",
+    "description": "Several residents received urgent email messages asking them to verify",
+    "location": "Bothell",
+    "severity": "high",
+    "status": "new",
+    "category": "",
+    "summary": "",
+    "checklist": [],
+    "createdAt": "2026-03-08T18:55:31.193Z"
+  },
+  {
+    "id": "1772996432491",
+    "title": "Suspicious password reset email",
+    "description": "Several residents received urgent email messages asking them to verify their account.",
+    "location": "Bothell",
+    "severity": "high",
+    "status": "new",
+    "createdAt": "2026-03-08T19:00:32.491Z",
+    "category": "phishing",
+    "summary": "This alert appears related to a phishing attempt in Bothell. Users should avoid suspicious links and verify account requests through trusted channels.",
+    "checklist": [
+      "Do not click suspicious links.",
+      "Do not enter your password on untrusted pages.",
+      "Report the message to the platform admin."
+    ],
+    "analysisSource": "fallback"
+  },
+  {
+    "id": "1772996478145",
+    "title": "Internet outage in building A",
+    "description": "Residents are reporting Wi-Fi and network connectivity problems since the morning.",
+    "location": "Seattle",
+    "severity": "medium",
+    "status": "new",
+    "createdAt": "2026-03-08T19:01:18.145Z",
+    "category": "network issue",
+    "summary": "This alert appears to describe a network or connectivity problem in Seattle. The issue should be verified across users and escalated if it persists.",
+    "checklist": [
+      "Check whether the issue affects multiple users.",
+      "Restart local network equipment if appropriate.",
+      "Escalate to the internet or IT provider."
+    ],
+    "analysisSource": "fallback"
+  },
+  {
+    "id": "1772996993215",
+    "title": "Suspicious password reset email",
+    "description": "Several residents received urgent email messages asking them to verify their account and reset their password through a link.",
+    "location": "Bothell",
+    "severity": "high",
+    "status": "new",
+    "createdAt": "2026-03-08T19:09:53.215Z",
+    "category": "phishing",
+    "summary": "This alert appears related to a phishing attempt in Bothell. Users should avoid suspicious links and verify account requests through trusted channels.",
+    "checklist": [
+      "Do not click suspicious links.",
+      "Do not enter your password on untrusted pages.",
+      "Report the message to the platform admin."
+    ],
+    "analysisSource": "fallback"
+  },
+  {
+    "id": "1772997310923",
+    "title": "Internet outage in apartment building",
+    "description": "Residents reported Wi-Fi and network connectivity issues since this morning.",
+    "location": "Seattle",
+    "severity": "medium",
+    "status": "resolved",
+    "createdAt": "2026-03-08T19:15:10.923Z",
+    "category": "network issue",
+    "summary": "This alert appears to describe a network or connectivity problem in Seattle. The issue should be verified across users and escalated if it persists.",
+    "checklist": [
+      "Check whether the issue affects multiple users.",
+      "Restart local network equipment if appropriate.",
+      "Escalate to the internet or IT provider."
+    ],
+    "analysisSource": "fallback",
+    "updatedAt": "2026-03-08T19:58:49.809Z"
+  },
+  {
+    "id": "1772999945045",
+    "title": "Internet outage in apartment building",
+    "description": "Residents reported Wi-Fi and network connectivity issues since this morning.",
+    "location": "Monroe LA",
+    "severity": "high",
+    "status": "new",
+    "createdAt": "2026-03-08T19:59:05.045Z",
+    "category": "network issue",
+    "summary": "Residents are experiencing Wi-Fi and network connectivity issues in the apartment building since this morning. The outage is high severity and may affect emergency communications and internet-dependent services.",
+    "checklist": [
+      "Restart modem/router and check power and indicator lights",
+      "Contact building management and your ISP to report the outage and request updates",
+      "Use a mobile hotspot or alternative location for urgent needs and log outage times"
+    ],
+    "analysisSource": "ai"
+  },
+  {
+    "id": "1773000248304",
+    "title": "Suss email",
+    "description": "Suspected email not accroidniogndo withe oteoht ehteaw otgn",
+    "location": "Ras tanura, Saudi Arabia",
+    "severity": "high",
+    "status": "new",
+    "createdAt": "2026-03-08T20:04:08.304Z",
+    "category": "phishing",
+    "summary": "A suspicious email was reported in Ras Tanura and may be a phishing attempt. Avoid interacting with the message and treat it as potentially malicious.",
+    "checklist": [
+      "Do not click links or open attachments in the email",
+      "Verify the sender using a known contact method (do not reply to the email)",
+      "Report the message to your security team and delete or quarantine the email"
+    ],
+    "analysisSource": "ai"
+  },
+  {
+    "id": "1773000601114",
+    "title": "aadfgdgfdg",
+    "description": "-1adffadf dgfadfa gfg",
+    "location": "Seattle, WA",
+    "severity": "high",
+    "status": "new",
+    "createdAt": "2026-03-08T20:10:01.114Z",
+    "category": "general safety",
+    "summary": "A high-severity alert with unclear content was issued for Seattle, WA. Stay cautious and await verified information from authorities.",
+    "checklist": [
+      "Remain aware of your surroundings and avoid nonessential travel",
+      "Seek updates from official local authorities or emergency channels",
+      "Report suspicious activity to police and follow verified guidance"
+    ],
+    "analysisSource": "ai"
+  }
+]
