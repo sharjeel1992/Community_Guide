@@ -8,6 +8,10 @@ The system allows users to create alerts, review them in a dashboard, search and
 
 This project was intentionally designed as a small, local-first prototype that emphasizes reliability, clarity, and graceful failure handling rather than production-scale complexity.
 
+## Demo Video
+
+Watch the demo here: https://youtu.be/wXnThiO8U9I
+
 ---
 
 ## 2. Problem Statement
