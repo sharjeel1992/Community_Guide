@@ -1,45 +1,76 @@
-## Community Guardian
+# Community Guardian
 
-Community Guardian is a local-first safety dashboard for:
-- neighborhood groups
-- remote workers
-- elderly users
+Community Guardian is a lightweight, local-first safety dashboard built for neighborhood groups, remote workers, and elderly users. It helps people report alerts, organize incidents, and receive calm, practical guidance through AI-assisted analysis with a reliable fallback system.
 
-It helps users create alerts, get AI-assisted categorization/summaries, and act on calm, practical checklists.
+## Core Flow
 
-## Core Flow (Create + View + Update + Search/Filter)
+The application supports a simple end-to-end workflow:
 
-1. Create alert from the form (title, description, location, severity)
+1. Create an alert using the form with:
+   - title
+   - description
+   - location
+   - severity
+
 2. View alerts in the dashboard list
-3. Update alert status (`new`, `investigating`, `resolved`) directly from each card
-4. Search/filter alerts by:
+
+3. Update alert status directly from each card:
+   - `new`
+   - `investigating`
+   - `resolved`
+
+4. Search and filter alerts by:
    - free-text query (`q`)
    - severity
    - status
 
-## AI Integration + Fallback
+## AI Integration and Fallback
 
-- AI capability: categorization + summary + action checklist (`src/ai.js`)
-- Fallback capability: deterministic keyword rules (`src/fallback.js`)
-- If AI is unavailable (missing key, quota error, parse failure), fallback analysis is used automatically.
+Community Guardian includes an AI-assisted analysis feature that helps users understand alerts more quickly.
+
+### AI capabilities
+Implemented in `src/ai.js`
+
+- categorizes alerts
+- generates a short summary
+- provides a calm, practical action checklist
+
+### Fallback capabilities
+Implemented in `src/fallback.js`
+
+- uses deterministic keyword-based rules
+- automatically takes over if AI is unavailable
+
+The fallback is used when:
+- the API key is missing
+- quota or billing limits are reached
+- the AI response cannot be parsed
+- the API request fails
+
+This ensures the system remains usable even when external AI services are not available.
 
 ## Basic Quality
 
-- Input validation with clear per-field errors (`src/validation.js`, `public/app.js`)
-- API returns validation details for invalid payloads
-- Tests included:
-  - happy path: classify a realistic alert and generate actionable analysis
-  - edge case: reject invalid alert input
-  - status update validation behavior
+The project includes validation, clear feedback, and automated tests.
 
-Run tests:
+### Validation
+Implemented in:
+- `src/validation.js`
+- `public/app.js`
+
+Features:
+- input validation with clear per-field errors
+- invalid fields highlighted in the UI
+- API returns validation details for bad requests
+
+### Tests
+The project includes automated tests for core functionality:
+
+- valid alert creation and analysis storage
+- invalid alert rejection
+- search and severity filtering
+
+Run tests with:
 
 ```bash
 npm test
-```
-
-## Data Safety
-
-- Uses synthetic seed data only: `data/alerts.json`
-- No live scraping or external data collection
-- Frontend uses local static assets only (including background image)
